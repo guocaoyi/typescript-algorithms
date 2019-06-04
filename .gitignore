@@ -13,5 +13,6 @@ typings/
 
 # Optional npm cache directory
 .npm
+**/*.js
 yarn.lock
 package-lock.json

@@ -1,7 +1,15 @@
-import bubble from '../src/algorithms/sorting/bubble';
+import { Sort, bubble } from '../src/algorithms/sorting/bubble';
 
 describe('Soring Algorithms (e2e)', () => {
-  const result = bubble([0, 9, 8, 7, 6, 5, 4, 3, 2, 1]);
+  let bubble1: Sort<number> = bubble;
 
-  expect(result).toBe([0, 1, 2, 3, 4, 5, 6, 7, 8, 9]);
+  test('should sort an array of numbers', () =>
+    expect(bubble1([4, 3, 2, 1])).toEqual([1, 2, 3, 4]));
+
+  let bubble2: Sort<string> = bubble;
+
+  test('should sort an array of strings', () =>
+    expect(
+      bubble2(['cherries', 'kiwi', 'grapes', 'avocado', 'pineapple', 'peach'])
+    ).toEqual(['avocado', 'cherries', 'grapes', 'kiwi', 'peach', 'pineapple']));
 });
