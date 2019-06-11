@@ -1,23 +1,16 @@
 {
   "compilerOptions": {
-    "allowJs": true,
     "allowSyntheticDefaultImports": true,
     "alwaysStrict": true,
     "baseUrl": "./",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "jsx": "react",
-    "module": "commonjs",
     "moduleResolution": "node",
     "noImplicitAny": true,
-    "removeComments": false,
-    "sourceMap": true,
     "strict": true,
     "strictNullChecks": false,
-    "suppressImplicitAnyIndexErrors": false,   
-    "target": "es2015",
+    "suppressImplicitAnyIndexErrors": false,
+    "target": "es2015"
   },
-  "exclude": [
-    "node_modules"
-  ]
+  "exclude": ["node_modules"]
 }

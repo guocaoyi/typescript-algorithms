@@ -4,10 +4,10 @@
  * @runtime O(n)
  * @memory O(n)
  */
-export default (arr: Array<number | string>): Array<number | string> => {
-  for (let i = 0; i < arr.length; i++) {
-    var randomIndex = Math.floor(Math.random() * (i + 1));
-    [arr[i], arr[randomIndex]] = [arr[randomIndex], arr[i]];
-  }
+export const disarray = (arr: number[]): number[] => {
+  arr.forEach((v: number, k: number) => {
+    let randomIndex = Math.floor(Math.random() * (k + 1));
+    [arr[k], arr[randomIndex]] = [arr[randomIndex], v];
+  });
   return arr;
 };
