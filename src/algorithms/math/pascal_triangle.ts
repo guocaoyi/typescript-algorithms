@@ -15,5 +15,5 @@ export const PascalTriangle = (n: number): number[] => {
     triangle.push(row);
   }
 
-  return triangle[n];
+  return triangle[n - 1];
 };
