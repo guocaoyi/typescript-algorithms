@@ -5,7 +5,11 @@ import { LinkedList } from '../linked-list/linked_list';
  * LIFO 原则（last in,first out）
  */
 export class Stack {
-  private list: LinkedList;
+  private list: LinkedList; // linked list
+
+  constructor() {
+    this.list = new LinkedList();
+  }
 
   /**
    * 新增元素到栈内，last in

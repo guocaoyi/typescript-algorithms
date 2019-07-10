@@ -4,8 +4,11 @@ import { LinkedList, LinkedListNode } from '../linked-list/linked_list';
  * 队列（Queue）
  */
 export class Queue {
-  private list: LinkedList;
-  constructor() {}
+  private list: LinkedList; // linked list
+
+  constructor() {
+    this.list = new LinkedList();
+  }
 
   /**
    * 查看队列是否为空
