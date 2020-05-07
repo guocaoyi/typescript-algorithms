@@ -21,6 +21,7 @@ export class DoublyLinkedListNode {
   public set prev(node: DoublyLinkedListNode) {
     this._prev = node;
   }
+
   public get prev(): DoublyLinkedListNode {
     return this._prev;
   }

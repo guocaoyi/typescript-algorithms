@@ -1,38 +1,3 @@
-let arr: Array<string | number> = [1, 2, 4];
-let arr2: Array<any> = [{ key: 123 }, { name: '1234' }];
-
-// access
-// O(1)
-
-// find | interator
-// O(n)
-arr.forEach;
-arr.map;
-
-// add O(n)
-arr.push;
-arr.shift;
-arr.concat;
-
-// delete
-// O(n);
-arr.pop;
-arr.unshift;
-arr.slice;
-arr.
-
-// update
-// O(n)
-// find + valid segmenmt
-
-// LinkedList
-let linked = new LinkedList();
-// O(n)
-// linked.find()
-
-// add 
-
-
 /**
  * 链表节点（Linked List）
  */
@@ -140,7 +105,9 @@ export class LinkedList {
     let node: LinkedListNode = this.head;
     let prenode: LinkedListNode = null;
     while (node !== null && node.next !== null) {
-      if (node.value === v) break;
+      if (node.value === v) {
+        break;
+      }
       prenode = node;
       node = node.next;
     }
@@ -161,6 +128,7 @@ export class LinkedList {
 
   /**
    * 转数组 LinkedListNode[]
+   * @return LinkedListNode[]
    */
   toArray(): LinkedListNode[] {
     const bottle: LinkedListNode[] = [];
@@ -174,8 +142,9 @@ export class LinkedList {
 
   /**
    * 翻转链表
+   * @return void
    */
-  reverse() {
+  reverse(): void {
     let curNode: LinkedListNode = this.head;
     let prenode: LinkedListNode = null;
     let nextnode: LinkedListNode = null;
@@ -187,8 +156,11 @@ export class LinkedList {
     this.head = prenode;
   }
 
-  /** 
-   *
+  /**
+   * toArray & toString
+   * @return JSON
    */
-  toString() {}
+  toString(): string {
+    return JSON.stringify(this.toArray());
+  }
 }

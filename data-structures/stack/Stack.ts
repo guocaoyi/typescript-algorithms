@@ -1,4 +1,4 @@
-import { LinkedList } from '../linked-list/linked_list';
+import { LinkedList } from '../linked-list/LinkedList';
 
 /**
  * 栈
