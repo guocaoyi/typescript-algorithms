@@ -3,6 +3,12 @@
     "allowSyntheticDefaultImports": true,
     "alwaysStrict": true,
     "baseUrl": "./",
+    "lib": [
+      "ES2020",
+      "ES5",
+      "ES6",
+      "ESNext"
+    ],
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "moduleResolution": "node",
@@ -12,5 +18,7 @@
     "suppressImplicitAnyIndexErrors": false,
     "target": "es2015"
   },
-  "exclude": ["node_modules"]
+  "exclude": [
+    "node_modules"
+  ]
 }

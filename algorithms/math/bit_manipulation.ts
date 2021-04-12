@@ -2,7 +2,7 @@
  * 左移
  * 10 << 1 --> 1010 << 1 --> 10100 --> 20
  */
-export const left = (num: number): number => {
+export const leftShift = (num: number): number => {
   return num << 1;
 };
 
@@ -10,8 +10,15 @@ export const left = (num: number): number => {
  * 右移
  * 10 -> 1010 >>1 -> 101 -> 5
  */
-export const right = (num: number): number => {
+export const rightShift = (num: number): number => {
   return num >> 1;
+};
+
+/**
+ * 无负号右移
+ */
+export const noRightShift = (num: number): number => {
+  return num >>> 1;
 };
 
 /**
